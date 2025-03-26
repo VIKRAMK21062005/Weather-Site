@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    /* 🎬 Smooth Background Change */
+    transition: background 1s ease-in-out;
+}
+
+
+/* 🌟 Animated Weather Card */
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    
+    /* 🎬 Entrance Animation */
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* 🎬 Smooth Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 🔍 Animated Search Bar */
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 16px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+    transition: width 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Expand Search Bar on Focus */
+.search input:focus {
+    width: 110%;
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.5);
+}
+
+/* 🎬 Animated Search Button */
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 🔥 Button Hover Effect */
+.search button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+}
+
+.search button img {
+    width: 30px; 
+    height: 30px;
+}
+
+.weather-icon {
+    width: 170px;
+    margin-top: 30px;
+    animation: bounce 2s infinite;
+}
+
+/* 🌥️ Weather Icon Bouncing Effect */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.weather h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+/* Align Columns Properly */
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind {
+    font-size: 20px;
+    margin-top: -6px;
+}
+
+/* 🌧️ Rain Alert Modal Animation */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+/* Show Modal with Animation */
+.modal.show {
+    display: block;
+    opacity: 1;
+}
+
+.modal-text {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* 🎬 Close Button Animation */
+.close-modal {
+    margin-top: 10px;
+    cursor: pointer;
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Button Hover Effect */
+.close-modal:hover {
+    transform: scale(1.1);
+    background: darkred;
+}
+
+/* 🌡️ Temperature Toggle Button */
+#temp-toggle {
+    cursor: pointer;
+    background: yellow;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* 🔥 Toggle Button Hover Effect */
+#temp-toggle:hover {
+    transform: scale(1.1);
+    background: gold;
+}
