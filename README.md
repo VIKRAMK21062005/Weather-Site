@@ -1,4 +1,4 @@
-🌤️ Weather Site
+# 🌤️ Weather Site
 
 📌 Table of Contents
 
@@ -14,15 +14,13 @@
 
 🚀 Usage
 
-🤝 Contributing
-
 📜 License
 
-📖 Description
+## 📖 Description
 
 This is a simple weather web application that fetches real-time weather data using an API and displays it to the user. The site allows users to search for weather conditions in different locations.
 
-✨ Features
+## ✨ Features
 
 🌍 Fetches current weather data using an API
 
@@ -36,7 +34,7 @@ This is a simple weather web application that fetches real-time weather data usi
 
 🎭 Background changes based on weather conditions
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 🏗️ HTML
 
@@ -46,11 +44,11 @@ This is a simple weather web application that fetches real-time weather data usi
 
 ☁️ OpenWeather API (or any other weather API of your choice)
 
-📥 Installation
+## 📥 Installation
 
 Clone the repository:
 
-git clone https://github.com/your-username/weather-site.git
+git clone (https://github.com/VIKRAMK21062005/Weather-Site.git)
 
 Navigate to the project folder:
 
@@ -58,7 +56,7 @@ cd weather-site
 
 Open index.html in your browser or use a local server.
 
-🔑 API Setup
+## 🔑 API Setup
 
 Sign up at OpenWeather (or another weather API provider) to get an API key.
 
@@ -66,7 +64,7 @@ Replace YOUR_API_KEY in script.js with your actual API key:
 
 const apiKey = "YOUR_API_KEY";
 
-🚀 Usage
+## 🚀 Usage
 
 🔍 Enter a city name in the search bar.
 
@@ -80,6 +78,6 @@ const apiKey = "YOUR_API_KEY";
 
 
 
-📜 License
+# 📜 License
 
 This project is open-source and available under the MIT License.
